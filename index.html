@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
+	<title></title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="./css/style.css" rel="stylesheet">
+	<link href="./css/flipclock.css" rel="stylesheet">
+	<link href="./css/fm.revealator.jquery.min.css" rel="stylesheet">
+	<link href="./css/progressively.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+	<script type="text/javascript" src="./js/jquery.js"></script>
+	<script type="text/javascript" src="./js/progressively.min.js"></script>
+	<script type="text/javascript" src="./js/flipclock.js"></script>
+	<script type="text/javascript" src="./js/fm.revealator.jquery.min.js"></script>
+	<script type="text/javascript" src="./js/main.js"></script>
+</head>
+<body>
+	<header class="header">
+		<div class="wrapper">
+			<nav>
+				<ul class="top-menu">
+					<li>
+						<a href="#" title="Начало" class="selected">Начало</a>
+					</li>
+					<li>
+						<a href="#" title="Регистрация">Регистрация</a>
+					</li>
+					<li>
+						<a href="#" title="чемпионате">О чемпионате</a>
+					</li>
+					<li>
+						<a href="#" title="Расписания">Расписания</a>
+					</li>
+					<li>
+						<a href="#" title="Судьи">Судьи</a>
+					</li>
+					<li>
+						<a href="#" title="Партнеры этапа">Партнеры этапа</a>
+					</li>
+					<li>
+						<a href="#" title="Контакты">Контакты</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header><!-- .header-->
+
+	<main class="content">
+		<div class="first-block progressive__bg progressive--not-loaded" data-progressive="./images/first-bg-hight.jpg" data-progressive-sm="./images/first-bg-medium.jpg" style="background-image: url('./images/first-bg-low.jpg');">
+			<div class="wrapper">
+				<div class="first-block-content">
+					<div class="logo"></div>
+					<div class="date-start">
+						<span>26 Апреля 13:00</span>
+						<img src="./images/logo.png" class="bar-logo" alt="бар Среда обитания">
+						<span>ул. Кранся, 68</span>
+					</div>
+					<div class="button-row">
+						<button type="button" class="take-championship-btn" name="button">Стать участником чемпионата!</button>
+						<span class="arrow-bottom arrow-bottom-1"></span>
+						<span class="arrow-bottom arrow-bottom-2"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="registration-block">
+			<div class="wrapper revealator-rotateleft revealator-once">
+				<h2 class="block-header header-white">
+						<span>ПРЕДВАРИТЕЛЬНАЯ<br>
+						ONLINE-РЕГИСТРАЦИЯ УЧАСТНИКОВ</span>
+				</h2>
+				<div class="reg-form-block">
+					<div class="timer-block">
+						<div class="timer-header">
+							До окончания предварительной регистрации <b>осталось:</b>
+						</div>
+						<div class="clock-block">
+							<div id="element-clock"></div>
+							<script type="text/javascript">
+								var clock = $('#element-clock').FlipClock(3600 * 24 * 3,{
+									language:'russian',
+									clockFace: 'DailyCounter',
+									countdown: true
+								});
+							</script>
+						</div>
+						<div class="timer-text-descr">
+							К участию в чемпионате допускаются только<br>
+							действующие члены Ассоциации Барменов из ЮФО
+						</div>
+					</div>
+					<div class="form-block">
+						<div class="form-row">
+							<input type="text" name="" placeholder="ФИО" value="">
+						</div>
+						<div class="form-row">
+							<input type="text" name="" placeholder="+7(___)___-__-__" value="">
+						</div>
+						<div class="form-row">
+							<input type="text" name="" placeholder="E-mail" value="">
+						</div>
+						<div class="form-row checkbox-row">
+							<div class="champ-type-name">Дисциплина</div>
+							<div class="checkboxes">
+								<div class="checkbox-cell">
+									<input type="checkbox" name="" value="" id="champ-type-classic">
+									<label for="champ-type-classic">Классика</label>
+								</div>
+								<div class="checkbox-cell">
+									<input type="checkbox" name="" value="" id="champ-type-fleiring">
+									<label for="champ-type-fleiring">Флейринг</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-row pdn-row"></div>
+						<div class="form-row button-form-row">
+							<button type="button" class="red-btn" name="button">Подать заявку на участие</button>
+						</div>
+					</div>
+					<div class="glass-decor"></div>
+					<div class="lime-decor"></div>
+				</div>
+			</div>
+		</div>
+		<div class="about-block revealator-rotateleft revealator-once">
+			<div class="wrapper">
+				<h2 class="block-header header-black"><span>О чемпионате</span></h2>
+				<div class="about-content">
+					<div class="video-block">
+						<div class="video-dummy"></div>
+					</div>
+					<div class="about-text">
+							<p>Бармен (от англ. bar — барная стойка, man — человек) — работник бара, обслуживающий посетителей за барной стойкой. Бармен приветствует гостей своего заведения, выявляет их вкусовые предпочтения, информирует об ассортименте, предлагает гостям подходящие варианты напитков, принимает заказы и разливает порции алкогольных и безалкогольных напитков, включая приготовленные им самим коктейли.</p>
+							<p>
+							Профессия бармена зародилась в Соединённых Штатах Америки во времена «золотой лихорадки». Тогда в торговых точках в поселениях продавалось сразу всё. Хозяева, чтобы увеличить товарооборот, стали здесь же предлагать и алкогольные напитки. Затем помещение магазина перегородил барьер, разделивший «торговую зону» и «место для отдыха», которое стало называться баром. Тогда же появились и первые бармены. Коктейли в их современном виде появились также в США. Коктейли в их современном виде появились также в США. Коктейли в их современном виде появились также в США. Профессия бармена зародилась в Соединённых Штатах Америки во времена «золотой лихорадки».</p>
+					</div>
+				</div>
+				<div class="soc-widget-block">
+					<span>Расскажи друзьям о мероприятии!</span>
+					<div class="soc-widget">
+						<img src="./images/repost.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="schedule progressive__bg progressive--not-loaded" data-progressive="./images/schedule-bg-hight.jpg" data-progressive-sm="./images/schedule-bg-medium.jpg" style="background-image: url('./images/schedule-bg-low.jpg');">
+			<div class="wrapper revealator-rotateleft revealator-once">
+				<h2 class="block-header header-white">
+					<span>Расписание</span>
+				</h2>
+				<div class="schedule-block">
+					<div class="schedule-photo-block">
+						<img src="./images/man-photo.jpg" alt="">
+					</div>
+					<div class="schedule-list">
+						<ul>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time selected">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+							<li>
+								<span class="schedule-time">13:00</span>
+								<span class="schedule-value">Сбор и регистрация участников</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="schedule-desc-text">
+					В зависимости от конечного количества участников возможен сдвиг по временному графику
+				</div>
+			</div>
+		</div>
+		<div class="judgmen">
+			<div class="wrapper  revealator-rotateleft revealator-once">
+				<h2 class="block-header header-white"><span>Судейский корпус</span></h2>
+				<div class="judge-list">
+					<div class="judge-items">
+						<div class="judge-item">
+							<div class="judge-pic">
+								<img src="./images/judge.jpg" alt="">
+							</div>
+							<div class="judge-name">
+								Ярослав Панов
+							</div>
+							<div class="judge-seporator"></div>
+							<div class="judge-post">
+								Вице-президент Петербурской Ассоциации Барменов
+							</div>
+						</div>
+						<div class="judge-item">
+							<div class="judge-pic">
+								<img src="./images/judge.jpg" alt="">
+							</div>
+							<div class="judge-name">
+								Ярослав Панов
+							</div>
+							<div class="judge-seporator"></div>
+							<div class="judge-post">
+								Вице-президент Петербурской Ассоциации Барменов
+							</div>
+						</div>
+						<div class="judge-item">
+							<div class="judge-pic">
+								<img src="./images/judge.jpg" alt="">
+							</div>
+							<div class="judge-name">
+								Ярослав Панов
+							</div>
+							<div class="judge-seporator"></div>
+							<div class="judge-post">
+								Вице-президент Петербурской Ассоциации Барменов
+							</div>
+						</div>
+						<div class="judge-item">
+							<div class="judge-pic">
+								<img src="./images/judge.jpg" alt="">
+							</div>
+							<div class="judge-name">
+								Ярослав Панов
+							</div>
+							<div class="judge-seporator"></div>
+							<div class="judge-post">
+								Вице-президент Петербурской Ассоциации Барменов
+							</div>
+						</div>
+						<div class="judge-item">
+							<div class="judge-pic">
+								<img src="./images/judge.jpg" alt="">
+							</div>
+							<div class="judge-name">
+								Ярослав Панов
+							</div>
+							<div class="judge-seporator"></div>
+							<div class="judge-post">
+								Вице-президент Петербурской Ассоциации Барменов
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="pathers">
+			<div class="wrapper revealator-rotateleft revealator-once">
+					<h2 class="block-header header-black"><span>Партнеры этапа<br>чемпионата мира</span></h2>
+					<div class="parhers-list">
+						<div class="pather-items">
+							<div class="pather-item">
+								<img src="./images/parther-1.png" alt="">
+							</div>
+							<div class="pather-item">
+								<img src="./images/parther-2.png" alt="">
+							</div>
+							<div class="pather-item">
+								<img src="./images/parther-1.png" alt="">
+							</div>
+							<div class="pather-item">
+								<img src="./images/parther-2.png" alt="">
+							</div>
+							<div class="pather-item">
+								<img src="./images/parther-1.png" alt="">
+							</div>
+							<div class="pather-item">
+								<img src="./images/parther-2.png" alt="">
+							</div>
+							<div class="pather-item">
+								<img src="./images/parther-2.png" alt="">
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		<div class="contact">
+			<div class="wrapper">
+				<div class="contact-block">
+					<h2 class="block-header header-white"><span>Контакты</span></h2>
+					<div class="contact-text">
+						Барменская Ассоциация Краснодарского края
+					</div>
+					<div class="contact-list">
+						<div class="contact-item">
+							<img src="./images/ic-contact.png" alt="">
+							<span>г. Краснодар, ул. Совхозная, 18</span>
+						</div>
+						<div class="contact-item">
+							<img src="./images/ic-mail.png" alt="">
+							<span><a href="mailto:info@krasnodar-bar.ru" title="info@krasnodar-bar.ru">info@krasnodar-bar.ru</a></span>
+						</div>
+						<div class="contact-item">
+							<img src="./images/ic-phone.png" alt="">
+							<div class="phone-number">
+								<span>+7 (918) 123-45-67</span>
+							</div>
+							<div class="phone-number">
+								<span>+7 (918) 123-45-67</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map-block">
+
+				</div>
+			</div>
+		</div>
+	</main><!-- .content -->
+
+	<footer class="footer">
+		<strong>Footer:</strong> Mus elit Morbi mus enim lacus at quis Nam eget morbi. Et semper urna urna non at cursus dolor vestibulum neque enim. Tellus interdum at laoreet laoreet lacinia lacinia sed Quisque justo quis. Hendrerit scelerisque lorem elit orci tempor tincidunt enim Phasellus dignissim tincidunt. Nunc vel et Sed nisl Vestibulum odio montes Aliquam volutpat pellentesque. Ut pede sagittis et quis nunc gravida porttitor ligula.
+	</footer><!-- .footer -->
+
+
+</body>
+</html>
