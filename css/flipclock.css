@@ -16,7 +16,7 @@
 .flip-clock-wrapper a {
   cursor: pointer;
   text-decoration: none;
-  color: #ccc; }
+  color: #fff; }
 
 .flip-clock-wrapper a:hover {
   color: #fff; }
@@ -37,7 +37,7 @@
 
 /* Main */
 .flip-clock-wrapper {
-  font: normal 11px "Helvetica Neue", Helvetica, sans-serif;
+  font-family:  "Open Sans";
   -webkit-user-select: none; }
 
 .flip-clock-meridium {
@@ -71,9 +71,9 @@
   width: 60px;
   height: 90px;
   font-size: 80px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 87px;
-  border-radius: 6px;
+  border-radius: 4px;
   background: #000;
 }
 
@@ -116,7 +116,12 @@
   width: 100%;
   height: 100%;
   z-index: 2; }
+.flip-clock-wrapper ul .up .shadow{
 
+}
+.flip-clock-wrapper ul .down .shadow{
+
+}
 .flip-clock-wrapper ul li a div.up {
   -webkit-transform-origin: 50% 100%;
   -moz-transform-origin: 50% 100%;
@@ -134,7 +139,7 @@
   width: 100%;
   height: 3px;
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.4); }
+}
 
 .flip-clock-wrapper ul li a div.down {
   -webkit-transform-origin: 50% 0;
@@ -145,21 +150,43 @@
   bottom: 0;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  border-top: 1px solid #838383;
 }
-
+.flip-clock-wrapper ul li a div.up {
+  border-bottom: 1px solid #000;
+}
+/*
+.flip:before{
+  display: block;
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 5px;
+  border: 1px solid #000;
+  left:0;
+  z-index: 5;
+  top: 34px;
+  background-color: #fff;
+}
+*/
 .flip-clock-wrapper ul li a div div.inn {
   position: absolute;
   left: 0;
   z-index: 1;
   width: 100%;
   height: 200%;
-  color: #ccc;
-  text-shadow: 0 1px 2px #000;
+  color: #474a4a;
   text-align: center;
-  background-color: #333;
+  background-color: #efeeec;
+  box-shadow: 0px 0px 3px 0px inset rgba(0,0,0,0.8);
   border-radius: 6px;
   font-size: 70px; }
-
+.flip-clock-wrapper ul:nth-child(11) li a div div.inn {
+  color: #e73920;
+}
+.flip-clock-wrapper ul:nth-child(12) li a div div.inn {
+  color: #e73920;
+}
 .flip-clock-wrapper ul li a div.up div.inn {
   top: 0; }
 
@@ -170,7 +197,9 @@
 .flip-clock-wrapper ul.play li.flip-clock-before {
   z-index: 3; }
 
-.flip-clock-wrapper .flip {   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); }
+.flip-clock-wrapper .flip {
+  border: 2px solid #000;
+}
 
 .flip-clock-wrapper ul.play li.flip-clock-active {
   -webkit-animation: asd 0.5s 0.5s linear both;
@@ -341,6 +370,8 @@
   background: linear, to bottom, rgba(0, 0, 0, 0.1) 0%, black 100%;
   -webkit-animation: show 0.5s linear both;
   -moz-animation: show 0.5s linear both;
+  background-size: contain;
+  background-repeat: no-repeat;
   animation: show 0.5s linear both; }
 
 .flip-clock-wrapper ul.play li.flip-clock-active .up .shadow {
